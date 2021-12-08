@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "design-system": "libs/design-system",
     "pavelkeyzik": "apps/pavelkeyzik",
     "pavelkeyzik-e2e": "apps/pavelkeyzik-e2e"
   }

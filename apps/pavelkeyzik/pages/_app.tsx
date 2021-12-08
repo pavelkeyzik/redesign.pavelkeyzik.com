@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
+import '@pavelkeyzik/theme';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,16 +8,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to pavelkeyzik!</title>
       </Head>
-      <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to pavelkeyzik!</h1>
-        </header>
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </div>
+      <main>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }

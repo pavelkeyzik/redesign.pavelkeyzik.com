@@ -1,0 +1,9 @@
+.navigation {
+  & > *:not(:last-child) {
+    margin-inline-end: var(--space-4);
+  }
+}
+
+.active {
+  color: var(--link-lighted);
+}
