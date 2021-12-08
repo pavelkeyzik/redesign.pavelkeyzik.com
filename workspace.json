@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "pavelkeyzik": "apps/pavelkeyzik",
+    "pavelkeyzik-e2e": "apps/pavelkeyzik-e2e"
+  }
+}

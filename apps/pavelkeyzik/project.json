@@ -1,0 +1,54 @@
+{
+  "root": "apps/pavelkeyzik",
+  "sourceRoot": "apps/pavelkeyzik",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/pavelkeyzik",
+        "outputPath": "dist/apps/pavelkeyzik"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "pavelkeyzik:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "pavelkeyzik:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "pavelkeyzik:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/pavelkeyzik"],
+      "options": {
+        "jestConfig": "apps/pavelkeyzik/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/pavelkeyzik/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

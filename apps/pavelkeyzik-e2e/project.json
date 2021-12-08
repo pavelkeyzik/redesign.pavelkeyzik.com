@@ -1,0 +1,28 @@
+{
+  "root": "apps/pavelkeyzik-e2e",
+  "sourceRoot": "apps/pavelkeyzik-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/pavelkeyzik-e2e/cypress.json",
+        "devServerTarget": "pavelkeyzik:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "pavelkeyzik:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/pavelkeyzik-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["pavelkeyzik"]
+}
