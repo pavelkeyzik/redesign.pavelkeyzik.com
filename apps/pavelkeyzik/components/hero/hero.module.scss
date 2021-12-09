@@ -1,0 +1,12 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--space-5);
+  min-height: 340px;
+
+  h1 {
+    color: var(--white);
+  }
+}

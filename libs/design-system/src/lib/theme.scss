@@ -1,14 +1,15 @@
 :root {
+  /* Color Tokens */
+
   --primary: hsl(210, 91%, 50%);
   --primary-darken: hsl(210, 91%, 40%);
 
   --gray-100: hsl(0, 0%, 7%);
+  --gray-900: hsl(0, 0%, 75%);
+
+  --white: #fff;
 
   --animation-duration: 0.2s;
-
-  --text: hsl(0, 0%, 75%);
-  --link: hsl(0, 0%, 75%);
-  --link-lighted: hsl(0, 0%, 100%);
 
   --space-0: 0px;
   --space-1: 2px;
@@ -16,7 +17,14 @@
   --space-3: 8px;
   --space-4: 12px;
   --space-5: 16px;
+  --space-6: 24px;
   --space-7: 32px;
+
+  /* Components Color Tokens */
+
+  --text: var(--gray-900);
+  --link: var(--gray-900);
+  --link-lighted: var(--white);
 }
 
 /* Box sizing rules */
@@ -114,4 +122,8 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.mt-6 {
+  margin-top: var(--space-6);
 }

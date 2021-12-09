@@ -4,3 +4,22 @@
   justify-content: space-between;
   padding-block: var(--space-4);
 }
+
+.logo {
+  font-size: 1.2rem;
+  color: var(--white);
+  transition: transform var(--animation-duration);
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: var(--space-6);
+  }
+}

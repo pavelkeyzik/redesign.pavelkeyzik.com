@@ -1,9 +1,11 @@
 .button {
+  font: inherit;
+  letter-spacing: inherit;
   background: var(--primary);
-  color: var(--text);
+  color: var(--white);
   border: none;
-  padding: var(--space-3) var(--space-5);
-  border-radius: 4px;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 40px;
   cursor: pointer;
   transition: background-color var(--animation-duration);
 

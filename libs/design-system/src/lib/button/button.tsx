@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import styles from './button.module.scss';
 
@@ -5,5 +6,7 @@ import styles from './button.module.scss';
 export interface ButtonProps {}
 
 export function Button(props: React.ComponentPropsWithRef<'button'>) {
-  return <button className={styles.button} {...props} />;
+  return (
+    <button {...props} className={classNames(styles.button, props.className)} />
+  );
 }
