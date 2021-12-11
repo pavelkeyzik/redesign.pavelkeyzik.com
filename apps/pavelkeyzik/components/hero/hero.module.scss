@@ -1,12 +1,82 @@
+.heroMainContainer {
+  position: relative;
+}
+
 .heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding-block: var(--space-5);
   min-height: 340px;
 
   h1 {
     color: var(--white);
+  }
+}
+
+.technologiesGrid {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .technologiesGrid {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .technologiesGridItem {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+  }
+
+  .technologiesGridItem:nth-child(1) {
+    transform: scale(1.2);
+    top: 20%;
+    left: 20%;
+  }
+
+  .technologiesGridItem:nth-child(2) {
+    top: 50%;
+    left: 12%;
+    transform: scale(0.8);
+  }
+
+  .technologiesGridItem:nth-child(3) {
+    top: 70%;
+    left: 25%;
+  }
+
+  .technologiesGridItem:nth-child(4) {
+    top: 80%;
+    left: 5%;
+    transform: scale(1.2);
+  }
+
+  .technologiesGridItem:nth-child(5) {
+    top: 10%;
+    right: 20%;
+    transform: scale(0.8);
+  }
+
+  .technologiesGridItem:nth-child(6) {
+    top: 30%;
+    right: 10%;
+  }
+
+  .technologiesGridItem:nth-child(7) {
+    top: 70%;
+    right: 15%;
+    transform: scale(1.2);
   }
 }
