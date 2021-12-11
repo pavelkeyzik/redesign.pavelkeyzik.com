@@ -1,0 +1,25 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid var(--white-alpha-200);
+  padding: var(--space-6);
+  cursor: pointer;
+  transition: background var(--animation-duration);
+
+  &:hover {
+    background: var(--primary);
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: var(--space-4);
+  }
+}
+
+.cardTitle {
+  color: var(--white);
+}
+
+.cardContent {
+  flex-grow: 1;
+}
