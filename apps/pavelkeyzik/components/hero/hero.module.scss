@@ -34,8 +34,8 @@
     display: flex;
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.05);
-    color: white;
+    background: var(--white-alpha-100);
+    color: var(--white);
     padding: 16px;
     border-radius: 50%;
     animation: pulse 6s infinite ease-in;
