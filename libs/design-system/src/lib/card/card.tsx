@@ -5,14 +5,11 @@ import styles from './card.module.scss';
 /* eslint-disable-next-line */
 export interface CardProps {}
 
-export function Card(props: React.ComponentProps<'div'>) {
+export function Card(props: React.ComponentProps<'a'>) {
   return (
-    <div
-      {...props}
-      className={classNames(styles.cardContainer, props.className)}
-    >
+    <a {...props} className={classNames(styles.cardContainer, props.className)}>
       {props.children}
-    </div>
+    </a>
   );
 }
 

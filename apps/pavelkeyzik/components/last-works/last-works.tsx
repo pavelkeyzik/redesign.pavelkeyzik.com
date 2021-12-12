@@ -4,21 +4,21 @@ import styles from './last-works.module.scss';
 export function LastWorks() {
   return (
     <div className={styles.container}>
-      <Card>
+      <Card href="https://pizzabot-slice.netlify.app">
         <Card.Title>Pizzabot</Card.Title>
         <Card.Content>
           Pizzabot is a tool that returns a list of instructions for getting
-          Pizzabot to the locations and delivering.
+          Pizzabot to the locations and delivering
         </Card.Content>
       </Card>
-      <Card>
+      <Card href="https://aibolit.com">
         <Card.Title>Aibolit</Card.Title>
         <Card.Content>
           A Platform to help surgeons work with Computed Tomography data using
           3D Model Viewer
         </Card.Content>
       </Card>
-      <Card>
+      <Card href="https://subaruteambelarus.by">
         <Card.Title>Subaru Team Belarus</Card.Title>
         <Card.Content>
           The project was made to share news about automotive community of
