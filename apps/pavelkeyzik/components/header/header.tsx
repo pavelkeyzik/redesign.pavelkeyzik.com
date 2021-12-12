@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@pavelkeyzik/design-system';
+import { Twitter } from 'react-feather';
 import Navigation from '../navigation/navigation';
 import styles from './header.module.scss';
 
@@ -11,7 +12,12 @@ export function Header() {
       </Link>
       <div className={styles.headerContent}>
         <Navigation />
-        <Button>Follow Me</Button>
+        <a href="https://twitter.com/pavelkeyzik">
+          <Button>
+            <Twitter />
+            Follow Me
+          </Button>
+        </a>
       </div>
     </div>
   );
