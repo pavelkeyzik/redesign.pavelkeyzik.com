@@ -1,9 +1,22 @@
 .navigation {
-  & > *:not(:last-child) {
-    margin-inline-end: var(--space-4);
-  }
-}
+  display: inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: var(--space-5);
 
-.active {
-  color: var(--link-lighted);
+  & a {
+    display: inline-grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: var(--space-3);
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.active {
+      color: var(--link-lighted);
+    }
+  }
 }
