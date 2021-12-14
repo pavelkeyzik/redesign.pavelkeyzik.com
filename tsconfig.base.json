@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@pavelkeyzik/date-format": ["libs/date-format/src/index.ts"],
       "@pavelkeyzik/design-system": ["libs/design-system/src/index.ts"],
       "@pavelkeyzik/theme": ["libs/design-system/src/lib/theme.scss"]
     }

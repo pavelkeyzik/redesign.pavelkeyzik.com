@@ -1,0 +1,23 @@
+{
+  "root": "libs/date-format",
+  "sourceRoot": "libs/date-format/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/date-format/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/date-format"],
+      "options": {
+        "jestConfig": "libs/date-format/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

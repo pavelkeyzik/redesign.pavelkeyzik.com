@@ -23,3 +23,12 @@
 .cardContent {
   flex-grow: 1;
 }
+
+.cardImageContainer {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.cardImage {
+  background: var(--gray-200);
+}
