@@ -1,0 +1,12 @@
+.postsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--space-7);
+}
+
+@media (min-width: 900px) {
+  .postsGrid {
+    grid-gap: var(--space-5);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
