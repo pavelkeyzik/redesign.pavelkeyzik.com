@@ -1,16 +1,21 @@
-import { Card } from '@pavelkeyzik/design-system';
-import { formatDate } from '@pavelkeyzik/date-format';
 import Container from '../components/container/container';
 import Header from '../components/header/header';
 import { getAllPosts } from '../lib/api';
 import AllPosts from '../components/all-posts/all-posts';
+import Section from '../components/section/section';
 
 function Blog({ allPosts }) {
   return (
     <Container>
       <Header />
       <main>
-        <AllPosts allPosts={allPosts} />
+        <Section
+          config={{
+            title: 'All Posts',
+          }}
+        >
+          <AllPosts allPosts={allPosts} />
+        </Section>
       </main>
     </Container>
   );

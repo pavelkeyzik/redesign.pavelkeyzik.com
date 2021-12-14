@@ -9,7 +9,7 @@ export interface AllPostsProps {
 
 export function AllPosts(props: AllPostsProps) {
   return (
-    <section className={styles.postsGrid}>
+    <div className={styles.postsGrid}>
       {props.allPosts.map((post) => (
         <Card key={post.slug} href={`/blog/${post.slug}`}>
           <Card.Image
@@ -23,7 +23,7 @@ export function AllPosts(props: AllPostsProps) {
           <Card.Content>{post.excerpt}</Card.Content>
         </Card>
       ))}
-    </section>
+    </div>
   );
 }
 
