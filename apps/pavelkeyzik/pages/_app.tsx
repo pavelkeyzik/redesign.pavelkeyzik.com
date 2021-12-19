@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '@pavelkeyzik/theme';
+import 'prism-themes/themes/prism-one-dark.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

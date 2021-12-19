@@ -1,8 +1,8 @@
-import Container from '../components/container/container';
-import Header from '../components/header/header';
-import { getAllPosts } from '../lib/api';
-import AllPosts from '../components/all-posts/all-posts';
-import Section from '../components/section/section';
+import Container from '../../components/container/container';
+import Header from '../../components/header/header';
+import { getAllPosts } from '../../lib/api';
+import AllPosts from '../../components/all-posts/all-posts';
+import Section from '../../components/section/section';
 
 function Blog({ allPosts }) {
   return (
