@@ -15,7 +15,7 @@ export function Navigation() {
         </a>
       </Link>
       <Link href="/blog" passHref>
-        <a className={router.pathname === '/blog' ? styles.active : ''}>
+        <a className={router.pathname.includes('/blog') ? styles.active : ''}>
           <Book />
           Blog
         </a>
