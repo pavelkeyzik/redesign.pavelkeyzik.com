@@ -17,7 +17,7 @@ export function Post(props: PostProps) {
   }, []);
 
   return (
-    <div style={{ width: '680px', margin: '0 auto' }}>
+    <div style={{ width: '680px', margin: '0 auto', paddingBottom: 60 }}>
       <PostHeader title={props.data.title} coverImage={props.data.coverImage} />
       <div className="markdown-body">
         <h2>{props.data.title}</h2>
